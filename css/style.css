@@ -1,0 +1,279 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.navbar-nav > li{
+    padding: 0 10px;
+}
+.sticky{
+    background-color: #1DA1F2;
+    position: fixed;
+    z-index: 999;    
+
+}
+.slider{
+    background: url(../img/slider.png);
+    height: 625px;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    position: relative;
+}
+
+.navbar-nav li a{
+    color: white;
+}
+
+.main-text{
+    margin-top:250px;
+    margin-left: 100px;
+}
+.main-sub{
+    letter-spacing: 2px;
+}
+#down-arrow{
+    position: absolute;
+    font-size: 38px;
+    left: 50%;
+    top: 140%;
+}
+.about-us{
+ background-color: #fff;
+ color:#333;
+}
+.about-us h5{
+    font-size: 14px;
+    text-transform: uppercase;
+    word-spacing: 9px;
+    transform: rotate(-90deg);
+    display: inline-block;
+    position: relative;
+    top: 60px;
+    left: -64px;
+    color: #1DA1F2;
+    font-weight: bold;
+}
+.about-us h2{
+    font-size: 42px;
+    line-height: 45px;
+    margin-left: 35px;
+    font-weight: 100px;   
+}
+.about-img{
+    background-image: url('../img/about.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+.about-company{
+    background-color: #f4f4f4;
+}
+.about-item{
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.1);
+    padding: 60px 30px;
+}
+.about-item i{
+    font-size: 42px;
+}
+.about-item h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.about-item hr{
+    width: 45px;
+    height: 3px;
+    background-color: #1DA1F2;
+    border: none;
+}
+.about-item p{
+    margin-top: 20px;
+}
+.about-item:hover{
+    background-color: #1DA1F2;
+    transition: 1000ms;
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p{
+   color: #fff;
+}
+
+.about-item:hover hr{
+     background-color: #fff;
+}
+.service{
+    background-color: #fff;
+    padding: 100px 0;
+}
+.service h5{
+    font-size: 14px;
+    text-transform: uppercase;
+    word-spacing: 9px;
+    transform: rotate(-90deg);
+    display: inline-block;
+    position: relative;
+    top: 60px;
+    left: -64px;
+    color: #1DA1F2;
+    font-weight: bold;
+}
+.service h2{
+    font-size: 42px;
+    line-height: 36px;
+    margin-left: 5px;
+    font-weight: 100px;   
+}
+.service p{
+    line-height: 30px;
+    margin-top: 20px;
+}
+.advertise{
+    background: url(../img/about.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 350px;
+    opacity: 0.8;
+}
+.advertise h2{
+    color: #000;
+    line-height: 50px;
+    padding: 125px;
+    font-family: 'Merriweather', serif;
+    text-shadow: 2px 2px 8px #1DA1F2;
+    font-weight: bold;
+}
+/*------------------blog------------------*/
+.blog{
+    background: linear-gradient(to right,#222222,#1DA1F2);
+    color: #fff;
+    font-family: 'Merriweather', serif;
+}
+.blog h3{
+    font-size: 32px;
+}
+.blog .card{
+    background-color: #252525;    
+}
+.blog .card:hover{
+    transform: translateY(-5px) scale(1);
+    transition: linear .2s;
+}
+.footer{
+    background-color: #000;
+    color: #fff;
+}
+.copy-right{
+    background-color: #1DA1F2;
+    color: #fff;
+    text-align: center;
+}
+#top-btn{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 999;
+    background-color: #1DA1F2;
+    color: #fff;
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+/* Pre loader*/
+.loader-container{
+    width: 100%;
+    height: 800px;
+    background-color: #000;
+    position: relative;
+    z-index: 9999;
+    padding-top: 250px; 
+    padding-left: 600px;  
+}
+.loader{
+    width: 50px;
+    height: 50px;
+    border: 5px solid;
+    color: #1DA1F2;
+    border-radius: 50px;
+    border-top-color: transparent;
+    animation: loader 1s linear infinite;
+}
+@keyframes loader{
+    25%{
+       color: #f00;
+    }
+    50%{
+      color:#ff0
+    }
+    75%{
+      color: #0f0;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/*For About Us page*/
+.about-page{
+    background: url(../img/about-us-twitter.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 350px;
+}
+.breadcrumb {
+   
+    background-color: transparent;
+    padding:160px 110px;
+}
+.breadcrumb-item.active{
+    color:#fff;
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    color:#fff;
+}
+.about_detail hr{
+    width: 60px;
+    height: 3px;
+    background-color: #1DA1F2;
+    border:none;
+    margin-bottom: 40px;
+}
+
+.about-detial p{
+    line-height: 22px;
+}
+.contact-session h3{
+     text-transform: uppercase;
+     font-weight: bold;
+}
+.nav-contact{
+    background-color: #1DA1F2;
+}
+.contact-session h3{
+    font-size: 22px;
+    margin-bottom: 2px;
+}
+.contact-session hr{
+    border: none;
+    background-color: #1DA1F2;
+    height: 3px; 
+}
+.contact-session h5{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+
+
